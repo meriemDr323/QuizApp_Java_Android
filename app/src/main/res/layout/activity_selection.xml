@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionActivity">
+
+    <!-- CONTENU PRINCIPAL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/img">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/ColorAccent2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≡"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- SCROLLABLE CONTENT -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <!-- TITRE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choisissez votre Quiz"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#EC4899"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:shadowColor="#7C3AED"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"/>
+
+                <!-- THÈME -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📚 Thème"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <RadioButton
+                        android:id="@+id/rbGeography"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="🌍 Géographie"
+                        android:tag="geography"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbScience"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="🔬 Science"
+                        android:tag="science"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="📜 Histoire"
+                        android:tag="history"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbSports"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="⚽ Sports"
+                        android:tag="sports"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbTechnology"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="💻 Technologie"
+                        android:tag="technology"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"/>
+
+                </RadioGroup>
+
+                <!-- DIFFICULTÉ -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ Difficulté"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgDifficulty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <RadioButton
+                        android:id="@+id/rbEasy"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="😊 Facile"
+                        android:tag="easy"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="🤔 Moyen"
+                        android:tag="medium"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbDifficult"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="🔥 Difficile"
+                        android:tag="difficult"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"/>
+
+                </RadioGroup>
+
+                <!-- 🔥 TIMER OPTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏱️ Chronomètre"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp">
+
+                    <RadioButton
+                        android:id="@+id/rbNoTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="❌ Sans chrono"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rbWithTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="⏱️ Avec chrono (30s/question)"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/radio_option_normal"
+                        android:buttonTint="#7C3AED"
+                        android:paddingStart="16dp"/>
+
+                </RadioGroup>
+
+                <!-- BOUTON DÉMARRER -->
+                <Button
+                    android:id="@+id/btnStartQuiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="COMMENCER LE QUIZ"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_fun"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="30dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- NAVIGATION DRAWER -->
+    <!-- NAVIGATION DRAWER -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu">
+
+        <!-- 🔥 FOOTER (BOUTON DÉCONNEXION EN BAS) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include layout="@layout/nav_footer" />
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

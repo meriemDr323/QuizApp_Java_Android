@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اندفاعة الدماغ</string>
+    
+    <!-- Login -->
+    <string name="login_title">اندفاعة الدماغ</string>
+    <string name="login_subtitle">اختبر معرفتك!</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="register_link">لم تسجل بعد؟ انضم إلينا!</string>
+    <string name="signup_button">التسجيل</string>
+    
+    <!-- Selection -->
+    <string name="choose_quiz">اختر الاختبار الخاص بك</string>
+    <string name="theme_label">📚 الموضوع</string>
+    <string name="difficulty_label">⚡ الصعوبة</string>
+    <string name="timer_label">⏱️ المؤقت</string>
+    <string name="start_quiz">ابدأ الاختبار</string>
+    
+    <!-- Themes -->
+    <string name="geography">🌍 جغرافيا</string>
+    <string name="science">🔬 علوم</string>
+    <string name="history">📜 تاريخ</string>
+    <string name="sports">⚽ رياضة</string>
+    <string name="technology">💻 تكنولوجيا</string>
+    
+    <!-- Difficulty -->
+    <string name="easy">😊 سهل</string>
+    <string name="medium">🤔 متوسط</string>
+    <string name="difficult">🔥 صعب</string>
+    
+    <!-- Timer -->
+    <string name="no_timer">❌ بدون مؤقت</string>
+    <string name="with_timer">⏱️ مع مؤقت (30 ثانية/سؤال)</string>
+    
+    <!-- Quiz -->
+    <string name="question">سؤال</string>
+    <string name="validate">تحقق</string>
+    <string name="next">التالي ➜</string>
+    <string name="correct_answer">إجابة صحيحة!</string>
+    <string name="wrong_answer">إجابة خاطئة</string>
+    <string name="time_up">⏰ انتهى الوقت!</string>
+    
+    <!-- Score -->
+    <string name="result_title">🏆 النتيجة 🏆</string>
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="logout">تسجيل الخروج</string>
+    
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="theme_settings">🎨 المظهر</string>
+    <string name="light_theme">☀️ فاتح</string>
+    <string name="dark_theme">🌙 داكن</string>
+    <string name="language_settings">🌐 اللغة</string>
+    <string name="french">🇫🇷 الفرنسية</string>
+    <string name="english">🇬🇧 الإنجليزية</string>
+    <string name="arabic">🇲🇦 العربية</string>
+    
+    <!-- Profile -->
+    <string name="profile">ملفي الشخصي</string>
+    <string name="name_label">الاسم</string>
+    <string name="email_label">البريد الإلكتروني</string>
+    
+    <!-- Statistics -->
+    <string name="statistics">الإحصائيات</string>
+    <string name="total_games">🎮 إجمالي المباريات</string>
+    <string name="best_score">🏆 أفضل نتيجة</string>
+    <string name="avg_score">📊 متوسط النتيجة</string>
+    
+    <!-- Menu -->
+    <string name="nav_profile">ملفي الشخصي</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_stats">الإحصائيات</string>
+    <string name="nav_logout">تسجيل الخروج</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ColorPrimaryDark">#E65100</color>
+    <color name="ColorPrimary">#FF6F00</color>
+    <color name="ColorAccent">#E91E8C</color>
+    <color name="ColorAccent2">#00BCD4</color>
+
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorPurple">#9C27B0</color>
+    <color name="colorYellow">#FFC107</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lightGray">#F5F5F5</color>
+
+    <color name="input_text_color">#000000</color>
+    <color name="input_hint_color">#666666</color>
+
+    <color name="topbar_button_text">#E65100</color>
+
+</resources>
